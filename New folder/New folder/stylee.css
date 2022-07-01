@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(4, 4, 63);
+}
+
+.overlay{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    transition: .5s;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.459);
+    opacity: 0;
+    cursor: pointer;
+}
+.overlay:hover{
+    opacity: 1;
+}
+.overlay > *{
+    transition: .5s;
+    transform: translateY(0px);
+}
+.overlay:hover > *{
+    transform: translateY(40px);
+    opacity: 1;
+    z-index: 999999;
+}
+.image{
+    position: relative;
+
+}
+
+@media screen and (max-width: 700px) {
+    .overlay:hover > *{
+        transform: translateY(40px);
+        opacity: 1;
+        z-index: 999999;
+    }
+}

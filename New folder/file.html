@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+
+<body style="background-color: #150019;">
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-md-1 p-0">
+                <div class="navigation" id="nav">
+                    <ul class="p-0 mt-3">
+                        <li class="al">
+                            <a href="">
+                                <span class="icon"><i class="fas fass fa-home"></i></span>
+                                <span class="title">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="icon"><i class="fas fass fa-user-alt"></i></span>
+                                <span class="title">About</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="icon"><i class="fas fass fa-phone-volume"></i></span>
+                                <span class="title">Contact</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="icon"><i class="fas fass fa-question"></i></span>
+                                <span class="title">Help</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="toggle" ondblclick="cc()" onclick="togg()"><i class="fas fa-bars"
+                        style="font-size: 20px;"></i></div>
+            </div>
+            <div class="col-md-11 text-light p-3 mt-5" style="text-align: justify;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non placeat nemo veritatis ex laborum rerum
+                    reprehenderit et temporibus fugiat, itaque mollitia eveniet, voluptates ullam! Modi, suscipit quasi
+                    sunt ut quisquam officia vero nostrum cumque maiores pariatur expedita at dolor iusto cupiditate
+                    sequi fuga, beatae dicta molestias veritatis delectus laborum tempora eaque! Amet ullam molestiae
+                    quos officiis numquam dolore. Minus, obcaecati suscipit quae, id ipsa itaque voluptates repudiandae
+                    illo beatae vitae commodi eius eaque molestiae soluta. Eaque voluptates velit vitae recusandae,
+                    ducimus, porro minima praesentium perferendis magnam animi quasi quas voluptas obcaecati placeat rem
+                    iusto. Optio alias aut nisi ad ducimus.!</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="5.jpg" alt="">
+                        <div class="card-body bg-dark">
+                            <h2 class="card-title">Asad Bro</h2>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                           <div class="btn btn-outline-danger">Fab</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="5.jpg" alt="">
+                        <div class="card-body bg-dark">
+                            <h2 class="card-title">Asad Bro</h2>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                            <div class="btn btn-outline-danger">Fab</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="5.jpg" alt="">
+                        <div class="card-body bg-dark">
+                            <h2 class="card-title">Asad Bro</h2>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                            <div class="btn btn-outline-danger">Fab</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <script>
+        function togg(){
+            let navigation = document.querySelector(".navigation")
+            let toggle = document.querySelector(".toggle")
+            navigation.classList.toggle(".active")
+            toggle.classList.toggle(".active")
+            var x =document.getElementById("nav");
+          if(x.style.width = "50px"){
+             x.style.width = "300px"
+          }
+        }
+    </script> -->
+    <script>
+        function togg() {
+            var x = document.getElementById("nav");
+            if (x.style.width = "50px") {
+                x.style.width = "300px"
+            }
+
+        }
+        function cc() {
+            var x = document.getElementById("nav");
+            if (x.style.width = "300px") {
+                x.style.width = " 50px"
+            }
+        }
+    </script>
+</body>
+
+</html>

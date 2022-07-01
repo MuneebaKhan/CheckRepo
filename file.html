@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="angular.js"></script>
+    <script src="angular-route.js"></script>
+    <script src="route.js"></script>
+    <title>Assignment</title>
+
+</head>
+
+<body style="background-color: #d39b0c;" ng-app="myApp">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 p-0 ">
+                <div id="myDIV">
+                    <ul class="navigation " id="nav">
+                        <li>
+                            <a class="lii activee mt-4" id="gg1" href="#/">
+                                <span class="icon"><i class="fas fass fa-home"></i></span>
+                                <span class="title">Home</span></a>
+
+                        </li>
+                        <li>
+                            <a class="lii" id="gg1" href="#!/event">
+                                <span class="icon"><i class="fas fass fa-book-open"></i></i></span>
+                                <span class="title">Courses</span></a>
+
+                        </li>
+                        <li>
+                            <a class="lii" id="gg1" href="#!/course">
+                                <span class="icon"><i class="fas fass fa-calendar-week"></i></i></span>
+                                <span class="title">Events</span></a>
+
+                        </li>
+                        <li>
+                            <a class="lii" id="gg1" href="#!/Semester">
+                                <span class="icon"><i class="fas fass fa-list-ol"></i></span>
+                                <span class="title">Semesters</span></a>
+
+                        </li>
+                        <li>
+                            <a class="lii" id="gg1" href="#!/Contact">
+                                <span class="icon"><i class="fas fass fa-home"></i></span>
+                                <span class="title">Contact</span></a>
+
+                        </li>
+                        <li>
+                            <a class="lii" id="gg1" href="#!/about">
+                                <span class="icon"><i class="fas fass fa-user-alt"></i></span>
+                                <span class="title">About Us</span></a>
+
+                        </li>
+                </div>
+                </ul>
+                <div class="toggle" ondblclick="c2()" onclick="togg()"><i class="fas fa-bars"
+                        style="font-size: 20px;"></i></div>
+            </div>
+            <div class="com-md-7" ng-view>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("lii");
+
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("activee");
+                current[0].className = current[0].className.replace(" activee", "");
+                this.className += " activee";
+            });
+        }
+    </script>
+
+
+    <script>
+        function togg() {
+            var x = document.getElementById("nav");
+            if (x.style.width = "50px") {
+                x.style.width = "300px"
+            }
+            x.style.visibility = "visible"
+        }
+    </script>
+    <script>
+
+function c2(){
+            var x = document.getElementById("nav");
+            if (x.style.width = "300px") {
+                x.style.width = "0px"
+            }
+
+
+            x.style.visibility = "hidden"
+        }
+    </script>
+
+</body>
+
+</html>

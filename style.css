@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navigation{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: #850404;
+    transition: 0.5s;
+    overflow: hidden;
+    z-index: 99999;
+}
+.navigation.activee,
+.navigation:hover{
+    width: 300px;
+    background-color: #770000;
+    z-index: 99999;
+}
+
+
+.navigation ul{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+}
+.navigation  li{
+    position: relative;
+    width: 100%;
+    margin-left: -10px;
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+/* 
+.navigation ul li:hover{
+    background-color: rgb(177, 9, 9);
+} */
+.navigation  li a{
+    position: relative;
+    z-index: 99999;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+.navigation  li a .icon{
+    position: relative;
+    display: block;
+    min-width: 50px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.navigation  li a .icon .fass{
+    font-size: 24px;
+}
+.navigation  li a .title{
+    position: relative;
+    display: block;
+    padding: 0 5px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+.toggle{
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* height: 50px;
+    width: 50px; */
+    padding: 15px;
+    background-color: #c70202;
+    cursor: pointer;
+    color: white;
+    background-attachment: fixed;
+    z-index: 9999999;
+}
+.toggle:hover{
+    background-color: #c70202;
+}
+.activee, .lii:hover{
+    background-color: #d39b0c;
+    color: rgb(255, 255, 255);
+    transition: .3s all;
+}
+
+.card{
+    transition: 2s;
+
+    overflow: hidden;
+}
+.toggle{
+    visibility: hidden;
+}
+@media screen and (max-width: 700px) {
+    .navigation{
+        position: fixed;
+        width: 0px;
+        margin-left: -25px;
+        visibility: hidden;}
+    .toggle{
+        visibility: visible;
+    }
+}
+.activee{
+    padding: 5px;
+    transition: 0.1s;
+    /* box-shadow: inset 2px 2px 13px #c70202,
+    inset -2px -2px 13px #c70202; */
+    /* border-bottom: 2px solid rgb(255, 3, 3); */
+}
+/* .card img{
+    transition: .5s;
+    overflow: hidden;
+}
+.card img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+} */
+/* .card .card-body{
+    height: 1px;
+    overflow: hidden;
+    transition: .5s;
+
+}
+.card .card-body:hover{
+   height: 4vh;
+} */

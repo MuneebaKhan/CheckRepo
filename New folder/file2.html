@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container p-5 mt-5">
+        <div class="row mt-4">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 ng ">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <img src="499.png" id="image"  class="mt-2 img-fluid mb-3" alt="">
+                        <p id="tt" class="text-center text-light">Your Feedback ??</p>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+                <div class="star  text-center" onclick="star()">
+                    <i class="fas s fa-star" id="sr1" onclick="st1()"></i>
+                    <i class="fas s fa-star" id="sr2" onclick="st2()"></i>
+                    <i class="fas s fa-star" id="sr3" onclick="st3()"></i>
+                    <i class="fas s fa-star" id="sr4" onclick="st4()"></i>
+                    <i class="fas s fa-star" id="sr5" onclick="st5()"></i>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-success btn-sm mt-4" disabled id="btnn" onclick="bt()">Submit</button>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+
+
+    <script>
+        function st1() {
+            var one = document.getElementById("sr1");
+            var two = document.getElementById("sr2");
+            var im = document.getElementById("image");
+            one.style.color = "yellow";
+            im.style.visibility = "visible"
+            document.getElementById("image").src = "em1.png"
+            document.getElementById("tt").innerHTML = "1 Star";
+            document.getElementById("btnn").disabled = false;
+        }
+        function st2() {
+            var one = document.getElementById("sr1");
+            var two = document.getElementById("sr2");
+            var im = document.getElementById("image");
+            two.style.color = "yellow";
+            one.style.color = "yellow";
+            im.style.visibility = "visible"
+            document.getElementById("image").src = "em2.png"
+            document.getElementById("tt").innerHTML = "2 Star";
+            document.getElementById("btnn").disabled = false;
+        }
+        function st3() {
+            var one = document.getElementById("sr1");
+            var two = document.getElementById("sr2");
+            var three = document.getElementById("sr3");
+            var im = document.getElementById("image");
+            two.style.color = "yellow";
+            one.style.color = "yellow";
+            three.style.color = "yellow";
+            im.style.visibility = "visible"
+            document.getElementById("image").src = "em3.png"
+            document.getElementById("tt").innerHTML = "3 Star";
+            document.getElementById("btnn").disabled = false;
+        }
+        function st4() {
+            var one = document.getElementById("sr1");
+            var two = document.getElementById("sr2");
+            var three = document.getElementById("sr3");
+            var four = document.getElementById("sr4");
+            var im = document.getElementById("image");
+            two.style.color = "yellow";
+            one.style.color = "yellow";
+            three.style.color = "yellow";
+            four.style.color = "yellow";
+            im.style.visibility = "visible"
+            document.getElementById("image").src = "em4.png"
+            document.getElementById("tt").innerHTML = "4 Star";
+            document.getElementById("btnn").disabled = false;
+        }
+        function st5() {
+            var one = document.getElementById("sr1");
+            var two = document.getElementById("sr2");
+            var three = document.getElementById("sr3");
+            var four = document.getElementById("sr4");
+            var five = document.getElementById("sr5");
+            var im = document.getElementById("image");
+            two.style.color = "yellow";
+            one.style.color = "yellow";
+            three.style.color = "yellow";
+            four.style.color = "yellow";
+            five.style.color = "yellow";
+            im.style.visibility = "visible"
+            document.getElementById("image").src = "em5.png"
+            document.getElementById("tt").innerHTML = "5 Star";
+            document.getElementById("btnn").disabled = false;
+        }
+
+    </script>
+    <script>
+        function bt() {
+            var one = document.getElementById("sr1");
+            var two = document.getElementById("sr2");
+            var three = document.getElementById("sr3");
+            var four = document.getElementById("sr4");
+            var five = document.getElementById("sr5");
+
+            swal({
+                icon: "success",
+                title: "Thanks for Your Feedback",
+            });
+
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>

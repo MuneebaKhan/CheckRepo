@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <title>Assignment</title>
+    <style>
+        .pp{
+            background-color: #850404;
+            padding: 15px;
+            color: white;
+            font-weight: 600;
+            letter-spacing: 1px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+
+<body ng-controller="hct">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-9 " style="margin-top: 50px;">
+                <h3 class="text-center mb-4">Aptech Computer Education</h3>
+                <img src="{{img}}" class="img-fluid" alt="">
+                <div class="row mt-4">
+                    <div class="col-md-5" ng-repeat="x in t">
+                        <img src="{{x.imgg}}" class="img-fluid mb-3" alt="">
+                    </div>
+                    <div class="col-md-7 mb-3" style="background-color: white;">
+                        <h2 style="font-weight: bolder;padding: 10px;">Aptech Learning <span
+                                style="color: #ffee00;text-shadow: 2px 2px 3px rgb(26, 21, 2);">Pakistan</span></h2>
+                        <p style="text-align: justify;font-weight: 500;">Aptech came to Pakistan in 1998, when the concept of vocational education in IT was only
+                            up-to learning of MS Word and Spreadsheets. Aptech Computer Education gave exposure to
+                            Pakistani youth towards global learning in IT education. Within a short span of time, it
+                            became the leading IT training provider of the country with its presence across Pakistan.
+                            Since the past decades, all of our franchises are providing Quality Education with
+                            International Standard and Certifications which are acceptable and transferable worldwide. <br>
+                            <a href="https://aptech-education.com.pk/aboutoverview.html"><button class="btn btn-warning mb-3 mt-3 p-2">Read more</button></a>  
+                        </p>
+        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-9 text-center">
+                <p class="pp">{{item}}</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

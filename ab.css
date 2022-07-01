@@ -1,0 +1,13 @@
+h1{
+    color: rgb(255, 174, 0);
+    letter-spacing: 3px;
+    transition: .5s ease-in-out;
+    font-weight: 900;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    text-align: center;
+}
+p{
+    text-align: justify;
+    color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

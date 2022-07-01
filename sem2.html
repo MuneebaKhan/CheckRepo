@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="crs.css">
+    <script src="angular.js"></script>
+    <script src="angular-route.js"></script>
+    <script src="route.js"></script>
+    <title>Assignment</title>
+<style>
+
+
+</style>
+</head>
+
+
+<body > 
+  <h1 class="text-center mt-4 ">Semesters</h1>
+ 
+  <!-- <div class="container-fluid p-0 mt-5">
+      <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-9">
+            <table class="table" >
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Semester</th>
+                    <th scope="col">Duration</th>
+                    <th scope="col">Job Profile</th>
+                    <th scope="col">Workshop</th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr ng-repeat = "x in d" ng-controller = "ev2">
+                    <th scope="row">{{d.num}}</th>
+                    <td>{{sem}}</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+      </div>
+
+</div> -->
+
+<div class="container-fluid p-5  mt-5"  ng-controller="ctr_2">
+    <table class="table table-bordered table-striped table-hover">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Education</th>
+            <th>Age</th>
+            <th>Fees</th>
+            <th>Status</th>
+            <th>Paid</th>
+            <th>DOB</th>
+            <th><input type="text" placeholder="Search..." ng-model="search" class="form-control"></th>
+            <th><input type="number" placeholder="Rows Show..." min="1" max="3" ng-model="rr" class="form-control"></th>
+        </tr>
+    </thead>
+        <tr ng-repeat="x in workers|filter:search | limitTo:rr">
+            <td>{{x.name | uppercase}}</td>
+            <td>{{x.education | lowercase}}</td>
+            <td>{{x.age}}</td>
+            <td>{{x.Salary | currency:"Rs: "}}</td>
+            <td><img src="{{x.status}}" style="width: 20px; height: 20px;" alt=""></td>
+            <td><button class="btn btn-primary" ng-click = "inc(x)">Paid</button></td>
+            <td>{{x.dob |date:"fullDate"}}</td>
+            
+            <!-- //Many filters like fulldate shortdate longdate own customize date -->
+        </tr>
+    </table>
+</div>
+
+
+</body>
+
+</html>
